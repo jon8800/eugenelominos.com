@@ -100,7 +100,7 @@ $('nav a.page-scroll').click(function() {
 function responsiveFn() {
      width = $( window ).width();
     
-    if(width <= 1024){
+    if(width <= 1050){
         $('header').parallaxify({
           positionProperty: 'transform',
           responsive: true,
@@ -263,4 +263,4 @@ $( ".portfolio-modal.modal" ).each(function(index) {
         $(this).removeClass('zoomOut')
     });    
 });
-
+console.log('Heeey! Stalking Again?');
