@@ -1,11 +1,49 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+//Responsive parallax
+ (function() {
+function responsiveFn() {
+     width = $( window ).width();
+    
+    if(width <= 1050){
+        $('header').parallaxify({
+          positionProperty: 'transform',
+          responsive: true,
+          motionType: 'natural',
+          mouseMotionType: 'performance',
+          motionAngleX: 65,
+          motionAngleY: 65,
+          alphaFilter: 0.5,
+          adjustBasePosition: true,
+          alphaPosition: 0.025,
+        });
+
+    }
+ else {
+      $('header').hover(
+    function(){
+        $(this).parallaxify({
+          positionProperty: 'transform',
+          responsive: true,
+          motionType: 'natural',
+          mouseMotionType: 'performance',
+          motionAngleX: 5,
+          motionAngleY: 5,
+          alphaFilter: 0.5,
+          adjustBasePosition: true,
+          alphaPosition: 0.025,
+        });
+    },
+    function(){
+        $(this).parallaxify('destroy');
+    }
+);
+    }
+ }
+// load() event and resize() event are combined 
+   $(window).ready(responsiveFn).resize(responsiveFn); 
+   })();
 
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+//Smooth anchor scrolling
 $(function() {
     $('body').on('click', '.page-scroll', function(event) {
         var $anchor = $(this);
@@ -96,48 +134,6 @@ $('nav a.page-scroll').click(function() {
 
   })();
 
- (function() {
-function responsiveFn() {
-     width = $( window ).width();
-    
-    if(width <= 1050){
-        $('header').parallaxify({
-          positionProperty: 'transform',
-          responsive: true,
-          motionType: 'natural',
-          mouseMotionType: 'performance',
-          motionAngleX: 65,
-          motionAngleY: 65,
-          alphaFilter: 0.5,
-          adjustBasePosition: true,
-          alphaPosition: 0.025,
-        });
-
-    }
- else {
-      $('header').hover(
-    function(){
-        $(this).parallaxify({
-          positionProperty: 'transform',
-          responsive: true,
-          motionType: 'natural',
-          mouseMotionType: 'performance',
-          motionAngleX: 5,
-          motionAngleY: 5,
-          alphaFilter: 0.5,
-          adjustBasePosition: true,
-          alphaPosition: 0.025,
-        });
-    },
-    function(){
-        $(this).parallaxify('destroy');
-    }
-);
-    }
- }
-   // load() event and resize() event are combined 
-   $(window).ready(responsiveFn).resize(responsiveFn); 
-   })();
 
   
 
