@@ -17,7 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/deepspace.min.css?ver=1.52" rel="stylesheet">
+    <link href="css/deepspace.css?ver=1.52" rel="stylesheet">
     <link href="css/icons.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 
@@ -55,18 +55,22 @@
 
     <!-- Header -->
     <header id="home">
-    <!-- particles.js container --> <div data-parallaxify-range-x="20" data-parallaxify-range-y="20" id="particles-js"></div>
-    <div id="planet3-image" data-parallaxify-range-x="50" data-parallaxify-range-y="50" ></div>
-    <div id="planet2-image" data-parallaxify-range-x="100" data-parallaxify-range-y="100"></div>
-    <div id="planet1-image" data-parallaxify-range-x="200" data-parallaxify-range-y="200" ></div>
+        
+        <ul id="scene">
+     <li class="layer" data-depth="0.20"><!-- particles.js container --><div id="particles-js"></div></li>
+            <li class="layer" data-depth="0.40"><div id="planet3-image"></div></li>
+            <li class="layer" data-depth="0.60"><div id="planet2-image"></div></li>
+            <li class="layer" data-depth="1.00"><div id="planet1-image"></div></li>
 
-      <div class="container">
+      <li class="layer" data-depth="0.30"><div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
                 <img class="mainlogo" data-parallaxify-range-x="60" data-parallaxify-range-y="60"  src="img/mainlogo.png" alt="Eugene Lominos: Multimedia Designer | Web Developer ">
                 </div>
             </div>
         </div>
+
+            </ul>
     </header>
     <!-- About Section -->
     <section id="about" class="slope" >
@@ -471,7 +475,9 @@ content & web development. </p>
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Parallax -->
-    <script src="js/jquery.parallaxify.min.js"></script>
+    <!--<script src="js/jquery.parallaxify.min.js"></script>-->
+    
+    <script src="js/jquery.parallax.min.js"></script>
 
     <!-- Particles -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

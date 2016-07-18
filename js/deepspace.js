@@ -1,46 +1,6 @@
-//Responsive parallax
- (function() {
-function responsiveFn() {
-     width = $( window ).width();
-    
-    if(width <= 1050){
-        $('header').parallaxify({
-          positionProperty: 'transform',
-          responsive: true,
-          motionType: 'natural',
-          mouseMotionType: 'performance',
-          motionAngleX: 65,
-          motionAngleY: 65,
-          alphaFilter: 0.5,
-          adjustBasePosition: true,
-          alphaPosition: 0.025,
-        });
+// parallax
 
-    }
- else {
-      $('header').hover(
-    function(){
-        $(this).parallaxify({
-          positionProperty: 'transform',
-          responsive: true,
-          motionType: 'natural',
-          mouseMotionType: 'performance',
-          motionAngleX: 5,
-          motionAngleY: 5,
-          alphaFilter: 0.5,
-          adjustBasePosition: true,
-          alphaPosition: 0.025,
-        });
-    },
-    function(){
-        $(this).parallaxify('destroy');
-    }
-);
-    }
- }
-// load() event and resize() event are combined 
-   $(window).ready(responsiveFn).resize(responsiveFn); 
-   })();
+$('#scene').parallax();
 
 
 //Smooth anchor scrolling
