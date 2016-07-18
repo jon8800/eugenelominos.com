@@ -1159,7 +1159,8 @@ footer .social li a:focus, footer .social li a:hover {
         margin-left: 0
     }
     #contact p {
-        margin-top: 12px
+        margin-top: 12px;
+        text-align: center;
     }
     #portfolio {
         padding: 400px 0 0
