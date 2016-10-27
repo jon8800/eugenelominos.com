@@ -1,8 +1,10 @@
+
+
 //Responsive parallax
  (function() {
 function responsiveFn() {
      width = $( window ).width();
-    
+
     if(width <= 1050){
         $('header').parallaxify({
           positionProperty: 'transform',
@@ -38,8 +40,8 @@ function responsiveFn() {
 );
     }
  }
-// load() event and resize() event are combined 
-   $(window).ready(responsiveFn).resize(responsiveFn); 
+// load() event and resize() event are combined
+   $(window).ready(responsiveFn).resize(responsiveFn);
    })();
 
 
@@ -135,7 +137,7 @@ $('nav a.page-scroll').click(function() {
   })();
 
 
-  
+
 
 
 
@@ -175,16 +177,18 @@ $(document).ready(function() {
 // On document ready:
 
 $(function(){
-
     // Instantiate MixItUp:
-
     $('#filter-works').mixItUp();
 
+    // Odd css for visible elements only
+      // $('#filter-works').on('mixStart', function(e, state){
+      // 	$('.grid .mix:visible:odd').css('margin', '60px 0 -30px');
+      // });
 });
 
 // SVG Hovers
 (function() {
-    
+
     function init() {
         var speed = 250,
             easing = mina.easeinout;
@@ -212,26 +216,26 @@ $(function(){
 
 
 // Detailed view animation
-$(function() {                       
-  $(".grid a").click(function() {  
-    $(".portfolio-modal img").addClass("animated fadeInLeft").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+$(function() {
+  $(".grid a").click(function() {
+    $(".portfolio-modal img").addClass("animated fadeInLeft").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     function() {
         $(this).removeClass('animated fadeInLeft')
-    });    
+    });
   });
-   $(".grid a").click(function() { 
-    $(".portfolio-modal .inner").addClass("animated fadeInUp").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+   $(".grid a").click(function() {
+    $(".portfolio-modal .inner").addClass("animated fadeInUp").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     function() {
         $(this).removeClass('animated fadeInUp')
-    });  
+    });
   });
 
    // Forms Focus States
-   $(".row.control-group").click(function() { 
-    $(this).addClass("animated pulse control-group-active").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+   $(".row.control-group").click(function() {
+    $(this).addClass("animated pulse control-group-active").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     function() {
         $(this).removeClass('animated pulse')
-    });  
+    });
   });
 });
 $('.row.control-group').click(function() {
@@ -249,14 +253,14 @@ $('.submit button').click(function() {
 
 $( ".portfolio-modal.modal" ).each(function(index) {
    $(this).on('show.bs.modal', function (e) {
-        $(this).addClass('zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+        $(this).addClass('zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     function() {
         $(this).removeClass('zoomIn')
-    });  
+    });
 }).on('hide.bs.modal', function (e) {
         $(this).addClass('zoomOut');
 }).on('hidden.bs.modal', function (e) {
         $(this).removeClass('zoomOut')
-    });    
+    });
 });
 console.log('Heeey! Stalking Again?');
