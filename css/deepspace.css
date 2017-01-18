@@ -64,6 +64,98 @@ hr.star-primary:after {
     margin: 0 auto
 }
 
+/*** START LOADER ***/
+
+.loader {
+    background: #174f48;
+    background: -webkit-radial-gradient(center, ellipse cover, #174f48 0%, #102e38 100%);
+    background: -webkit-radial-gradient(center ellipse, #174f48 0%, #102e38 100%);
+    background: radial-gradient(ellipse at center, #174f48 0%, #102e38 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174f48', endColorstr='#102e38', GradientType=1);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    height: 100%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.no-js .loader {
+  display: none;
+}
+
+.loader .mainlogo {
+    max-width: 450px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.spinner {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+
+.spinner .path {
+    stroke: #00d2c6;
+    stroke-linecap: round;
+    -webkit-animation: dash 1.5s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
 /*** HEADER ***/
 header {
     color: #fff;
@@ -776,7 +868,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 3px;
-    height: 80px;
+    height: 70px;
     margin-left: 35px;
     background-color: #4A4851;
     -webkit-transform: rotate(45deg);
@@ -786,7 +878,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 3px;
-    height: 80px;
+    height: 70px;
     background-color: #4A4851;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
