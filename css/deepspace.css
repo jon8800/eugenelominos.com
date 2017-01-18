@@ -320,7 +320,7 @@ section {
     position: relative;
     text-decoration: none
 }
-.overlay ul li a:after, .overlay ul li a:before {
+.overlay ul li a:before {
     position: absolute;
     top: 100%;
     left: 0;
@@ -336,15 +336,13 @@ section {
     -moz-transition: top .3s, opacity .3s, -moz-transform .3s;
     transition: top .3s, opacity .3s, transform .3s
 }
-.overlay ul li a:hover::after, .overlay ul li a:hover::before {
+.overlay ul li a:hover::before {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1);
     opacity: 1
 }
-.overlay ul li a:focus::after, .overlay ul li a:hover::after {
-    top: 0
-}
+
 .overlay-scale {
     visibility: hidden;
     opacity: 0;
@@ -361,6 +359,7 @@ section {
     -webkit-transition: -webkit-transform .4s, opacity .4s;
     transition: transform .4s, opacity .4s
 }
+
 @media screen and (max-height:30.5em) {
     .overlay nav {
         height: 70%;
