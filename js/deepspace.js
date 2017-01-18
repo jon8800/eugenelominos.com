@@ -1,4 +1,11 @@
 
+//Start Loader
+$(window).load(function() {
+		$("#loader").addClass("fadeOut");
+	});
+$('#loader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $("#loader").hide();
+});
 
 //Responsive parallax
  (function() {
