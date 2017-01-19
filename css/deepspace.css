@@ -6,29 +6,36 @@
     font-style: normal
 }
 
+
 /* ===============
    GLOBAL SETTINGS
    =============== */
+
 .main-container {
     width: 100%;
     overflow: hidden;
     display: block
 }
+
 p {
     font-size: 24px
 }
+
 p.small {
     font-size: 16px
 }
+
 a, a.active, a:active, a:focus, a:hover {
     outline: 0;
     color: #18bc9c;
     text-decoration: none
 }
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: drakolombregular
 }
+
 hr.star-light, hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
@@ -37,6 +44,7 @@ hr.star-light, hr.star-primary {
     border-top: solid 5px;
     text-align: center
 }
+
 hr.star-light:after, hr.star-primary:after {
     content: "\f005";
     display: inline-block;
@@ -46,23 +54,29 @@ hr.star-light:after, hr.star-primary:after {
     font-family: FontAwesome;
     font-size: 2em
 }
+
 hr.star-light {
     border-color: #fff
 }
+
 hr.star-light:after {
     color: #fff;
     background-color: #18bc9c
 }
+
 hr.star-primary {
     border-color: #2c3e50
 }
+
 hr.star-primary:after {
     color: #2c3e50;
     background-color: #fff
 }
+
 .img-centered {
     margin: 0 auto
 }
+
 
 /*** START LOADER ***/
 
@@ -80,27 +94,30 @@ hr.star-primary:after {
     animation-delay: 2s;
 }
 
+.loader .row {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .no-js .loader {
-  display: none;
+    display: none;
 }
 
 .loader .mainlogo {
     max-width: 450px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
 }
 
 .spinner {
     -webkit-animation: rotate 2s linear infinite;
     animation: rotate 2s linear infinite;
     z-index: 2;
-    position: absolute;
     top: 60%;
     left: 50%;
-    margin: -25px 0 0 -25px;
+    margin-top: 50px;
     width: 50px;
     height: 50px;
 }
@@ -156,7 +173,9 @@ hr.star-primary:after {
     }
 }
 
+
 /*** HEADER ***/
+
 header {
     color: #fff;
     background: url(../img/mainbg2-min.jpg) no-repeat;
@@ -165,9 +184,11 @@ header {
     height: 1300px;
     overflow: hidden
 }
+
 .mainlogo {
     width: 55%
 }
+
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -175,21 +196,26 @@ header .intro-text .name {
     font-size: 2em;
     font-weight: 700
 }
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300
 }
+
 header .container {
     padding-top: 70px;
     padding-bottom: 100px
 }
+
 section {
     position: relative
 }
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0
 }
+
 .floating-label-form-group input, .floating-label-form-group textarea {
     z-index: 1;
     position: relative;
@@ -202,12 +228,15 @@ section {
     box-shadow: none!important;
     resize: none
 }
+
 .floating-label-form-group input {
     height: 85px
 }
+
 .floating-label-form-group textarea {
     height: 285px
 }
+
 .floating-label-form-group label {
     display: block;
     z-index: 0;
@@ -224,17 +253,21 @@ section {
     -ms-transition: top .3s ease, opacity .3s ease;
     transition: top .3s ease, opacity .3s ease
 }
+
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
     border-left: 1px solid #eee
 }
+
 .floating-label-form-group-with-value label {
     top: 0;
     opacity: 1
 }
+
 .floating-label-form-group-with-focus label {
     color: #18bc9c
 }
+
 .scroll-top {
     z-index: 2555;
     position: fixed;
@@ -243,6 +276,7 @@ section {
     width: 50px;
     height: 50px
 }
+
 .scroll-top .btn {
     border-radius: 0;
     font-size: 20px;
@@ -251,15 +285,18 @@ section {
     border: none;
     box-shadow: rgba(22, 20, 0, .16) 0 0 1px 1px
 }
+
 .scroll-top .btn:focus {
     outline: 0
 }
+
 #trigger-overlay {
     position: fixed;
     top: 20px;
     right: 30px;
     z-index: 2002
 }
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -269,6 +306,7 @@ section {
     background: rgba(2, 167, 158, .95);
     z-index: 2000
 }
+
 .overlay .overlay-close {
     width: 80px;
     height: 80px;
@@ -283,6 +321,7 @@ section {
     outline: 0;
     z-index: 100
 }
+
 .overlay nav {
     position: relative;
     top: 62%;
@@ -290,6 +329,7 @@ section {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
+
 .overlay ul {
     padding: 0;
     margin: 0 auto;
@@ -297,12 +337,15 @@ section {
     height: 100%;
     position: relative
 }
+
 .feature-icon, .grid figcaption, .overlay nav, header {
     text-align: center
 }
+
 .overlay ul, footer .social, ul.filters {
     list-style: none
 }
+
 .overlay ul li {
     display: block;
     height: 20%;
@@ -311,6 +354,7 @@ section {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
+
 .overlay ul li a {
     font-family: drakolombregular;
     font-size: 54px;
@@ -320,6 +364,7 @@ section {
     position: relative;
     text-decoration: none
 }
+
 .overlay ul li a:before {
     position: absolute;
     top: 100%;
@@ -336,6 +381,7 @@ section {
     -moz-transition: top .3s, opacity .3s, -moz-transform .3s;
     transition: top .3s, opacity .3s, transform .3s
 }
+
 .overlay ul li a:hover::before {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -351,6 +397,7 @@ section {
     -webkit-transition: -webkit-transform .2s, opacity .2s, visibility 0s .2s;
     transition: transform .2s, opacity .2s, visibility 0s .2s
 }
+
 .overlay-scale.open {
     visibility: visible;
     opacity: 1;
@@ -369,6 +416,7 @@ section {
         min-height: 34px
     }
 }
+
 .c-hamburger {
     display: block;
     position: relative;
@@ -389,9 +437,11 @@ section {
     -webkit-transition: background .3s;
     transition: background .3s
 }
+
 .c-hamburger:focus {
     outline: 0
 }
+
 .c-hamburger span {
     display: block;
     position: absolute;
@@ -401,6 +451,7 @@ section {
     height: 3px;
     background: #00d1c5
 }
+
 .c-hamburger span::after, .c-hamburger span::before {
     position: absolute;
     display: block;
@@ -410,28 +461,35 @@ section {
     background-color: #00d1c5;
     content: ""
 }
+
 .c-hamburger--htx, .c-hamburger--htx.is-active {
     background-color: transparent
 }
+
 .c-hamburger span::before {
     top: -20px
 }
+
 .c-hamburger span::after {
     bottom: -20px
 }
+
 .c-hamburger--htx {
     -webkit-transition: box-shadow .3s;
     transition: box-shadow .3s
 }
-.c-hamburger--htx:hover {
-}
+
+.c-hamburger--htx:hover {}
+
 .c-hamburger--htx.is-active:hover {
     box-shadow: none
 }
+
 .c-hamburger--htx span {
     -webkit-transition: background .3s cubic-bezier(.19, 1, .22, 1) .3s;
     transition: background .3s cubic-bezier(.19, 1, .22, 1) .3s
 }
+
 .c-hamburger--htx span::after, .c-hamburger--htx span::before {
     -webkit-transition-duration: .3s, .3s;
     transition-duration: .3s, .3s;
@@ -440,57 +498,68 @@ section {
     -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
     transition-timing-function: cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1)
 }
+
 .c-hamburger--htx span::before {
     -webkit-transition-property: top, -webkit-transform;
     transition-property: top, transform
 }
+
 .c-hamburger--htx span::after {
     -webkit-transition-property: bottom, -webkit-transform;
     transition-property: bottom, transform
 }
+
 .c-hamburger--htx.is-active span {
     background: 0 0
 }
+
 .c-hamburger--htx.is-active span::before {
     top: 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg)
 }
+
 .c-hamburger--htx.is-active span::after {
     bottom: 0;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
+
 .c-hamburger--htx.is-active span::after, .c-hamburger--htx.is-active span::before {
     background-color: #fff;
     -webkit-transition-delay: 0s, .3s;
     transition-delay: 0s, .3s
 }
+
 #planet3-image {
     background: url(../img/planet3.png) top right/100% auto no-repeat;
     position: absolute;
     width: 250px;
     height: 250px
 }
+
 #planet2-image {
     background: url(../img/planet2.png) center/85% auto no-repeat;
     position: absolute
 }
+
 #planet1-image {
     background: url(../img/planet1b.png) top right/100% auto no-repeat;
     position: absolute;
     bottom: -100px;
     left: -100px
 }
+
 canvas {
     display: block;
     vertical-align: bottom
 }
+
 #particles-js, #particles-js-contact {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -500,6 +569,7 @@ canvas {
 
 
 /*** ABOUT SECTION ***/
+
 #about {
     z-index: 1354;
     background-color: #fff;
@@ -507,12 +577,14 @@ canvas {
     margin-bottom: -225px;
     color: #009ec8
 }
+
 #about .container {
     position: relative;
     z-index: 12;
     margin-top: -65px;
     padding-bottom: 22px
 }
+
 #about:after, #about:before {
     content: " ";
     display: block;
@@ -523,55 +595,68 @@ canvas {
     overflow: hidden;
     width: 100%
 }
+
 #about:before {
     transform: skewY(5deg) translateZ(0);
     top: -100px
 }
+
 #about:after {
     transform: skewY(-5deg) translateZ(0);
     bottom: -100px
 }
+
 h1 {
     font-size: 12em
 }
+
 #about h2 {
     font-size: 6em;
     margin: -10px 0 20px
 }
+
 #about .dynamictext {
     position: relative;
     top: -10px;
     margin-left: 25px
 }
+
 #about .dynamictext #text1 {
     color: #01b627
 }
+
 #about .dynamictext #text2 {
     color: #ffa11b
 }
+
 #about .dynamictext #text3 {
     color: #a801d2
 }
+
 #about .dynamictext h3 {
     position: absolute;
     font-size: 1em;
     left: 0;
     top: 0
 }
+
 .dynamictext, .feature-icon {
     position: relative
 }
+
 #about h2 .fa-heart {
     color: #ff3737;
     font-size: .9em;
     margin: 0 15px
 }
+
 #about p.about-p {
     font-size: 2.5em;
     font-family: Exo;
     font-weight: 300;
     color: #595959
 }
+
 .feature-icon {
     display: inline-block;
     width: 200px;
@@ -585,9 +670,11 @@ h1 {
     -moz-transition: color .3s;
     transition: color .3s
 }
+
 .feature-icon:hover i {
     color: #fff
 }
+
 .feature-icon:after {
     pointer-events: none;
     position: absolute;
@@ -612,6 +699,7 @@ h1 {
     transform: scale(1.3);
     opacity: 0
 }
+
 .feature-icon:hover::after {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -619,18 +707,23 @@ h1 {
     transform: scale(1);
     opacity: 1
 }
+
 .icon-brush {
     color: #ffa800
 }
+
 .icon-code {
     color: #0fc75d
 }
+
 .icon-data {
     color: #7b3cb1
 }
+
 .icon-test {
     color: #ff5959
 }
+
 .caption {
     font-family: drakolombregular;
     text-transform: uppercase;
@@ -638,7 +731,9 @@ h1 {
     margin-top: 18px
 }
 
+
 /*** PORTFOLIO SECTION ***/
+
 #portfolio {
     padding: 480px 0 120px;
     background: #00bfb4;
@@ -651,10 +746,12 @@ h1 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00bfb4', endColorstr='#00a4cf', GradientType=1);
     z-index: 1334
 }
+
 #portfolio .container {
     position: relative;
     z-index: 122
 }
+
 #portfolio:after {
     content: " ";
     display: block;
@@ -667,27 +764,34 @@ h1 {
     bottom: -100px;
     overflow: hidden
 }
+
 #portfolio h1 span.wow.jello, ul.filters li {
     display: inline-block
 }
+
 #portfolio h1 {
     color: #fff;
     line-height: 135px
 }
+
 #portfolio h1 span {
     font-size: .75em
 }
+
 #portfolio h1 i {
     color: #ff5400
 }
+
 ul.filters {
     margin: 35px 0;
     padding: 0
 }
+
 ul.filters li {
     color: #fff;
     margin-right: 24px
 }
+
 ul.filters li a {
     color: #fff;
     font-family: Exo;
@@ -700,30 +804,37 @@ ul.filters li a {
     transition: color .2s ease, background-color .2s ease;
     -webkit-transition: color .2s ease, background-color .2s ease
 }
+
 ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     color: #00bfb4;
     background-color: #fff
 }
+
 .mix {
     display: none;
     overflow: hidden
 }
+
 .grid {
     margin-top: 45px;
     padding: 0
 }
+
 .grid a {
     color: #333
 }
+
 .grid figure {
     position: relative;
     margin: 5px
 }
+
 .grid figure img {
     position: relative;
     display: block;
     width: 100%
 }
+
 .grid figcaption {
     position: absolute;
     bottom: 100px;
@@ -732,11 +843,13 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     width: 100%;
     height: 150px
 }
+
 .grid figure:before, .grid svg {
     height: 100%;
     width: 100%;
     position: absolute
 }
+
 .grid figcaption h2 {
     font-family: drakolombregular margin: 0 0 20px 0;
     color: #3498db;
@@ -745,25 +858,30 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s
 }
+
 .grid figcaption p, .grid figure button {
     font-weight: 300;
     font-size: 20px;
     font-family: Exo
 }
+
 .grid figcaption p {
     padding: 0 20px;
     color: #555;
     -webkit-transition: opacity .3s, -webkit-transform .3s;
     transition: opacity .3s, transform .3s
 }
+
 .grid figcaption h2, .grid figcaption p {
     -webkit-transform: translateY(50px);
     transform: translateY(50px)
 }
+
 .grid .twolines figcaption h2, .grid .twolines figcaption p {
     -webkit-transform: translateY(20px);
     transform: translateY(20px)
 }
+
 .grid figure button {
     position: absolute;
     padding: 4px 20px;
@@ -782,39 +900,49 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-transform: translateY(-50%) translateX(-50%) scale(.25);
     transform: translateY(-50%) translateX(-50%) scale(.25)
 }
+
 .grid figure button:hover {
     background-color: #333
 }
+
 .grid .mix:hover figure button {
     opacity: 1;
     -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
     transform: translateY(-50%) translateX(-50%) scale(1)
 }
+
 .grid figcaption, .grid figcaption h2, .grid figcaption p, .grid figure button {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
+
 .grid svg {
     bottom: -1px;
     z-index: 10
 }
+
 .grid svg path {
     fill: #fff
 }
+
 .grid .mix:hover figure img {
     opacity: 1
 }
+
 .grid .mix:hover figcaption h2, .grid .mix:hover figcaption p {
     -webkit-transform: translateY(170px);
     transform: translateY(170px)
 }
+
 .grid .twolines.mix:hover figcaption h2, .grid .twolines.mix:hover figcaption p {
     -webkit-transform: translateY(135px);
     transform: translateY(135px)
 }
+
 .grid .mix:hover figcaption p {
     opacity: 0
 }
+
 .grid figure:before {
     content: '';
     background-color: #000;
@@ -823,13 +951,16 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-transition: opacity .3s;
     transition: opacity .3s
 }
+
 .grid .mix:hover figure:before {
     opacity: 0
 }
+
 .portfolio-modal {
     z-index: 9999;
     -webkit-overflow-scrolling: touch
 }
+
 .portfolio-modal .modal-content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -847,6 +978,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -ms-flex-align: center;
     align-items: center
 }
+
 .portfolio-modal .close-modal {
     position: absolute;
     top: 30px;
@@ -861,9 +993,11 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -ms-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
+
 .portfolio-modal .close-modal:hover {
     opacity: .3
 }
+
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 3px;
@@ -874,6 +1008,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg)
 }
+
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 3px;
@@ -883,12 +1018,14 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg)
 }
+
 .modal-content h2 {
     font-size: 3.5em;
     font-weight: 400;
     margin: 0;
     color: #01fff0
 }
+
 .portfolio-modal .modal-content h3 {
     font-family: Exo;
     text-transform: initial;
@@ -897,10 +1034,12 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     font-weight: 400;
     margin: .25em 0 .5em
 }
+
 #contact a, #contact p, .portfolio-modal .modal-content p {
     font-weight: 300;
     font-family: Exo
 }
+
 .portfolio-modal .modal-content a {
     font-family: Exo;
     padding: 14px 22px;
@@ -909,16 +1048,19 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-transition: color .3s ease, background-color .3s ease;
     transition: color .3s ease, background-color .3s ease
 }
+
 .portfolio-modal .modal-content a:focus, .portfolio-modal .modal-content a:hover {
     color: #222125;
     background-color: #18BC9C
 }
+
 .portfolio-modal .modal-content p {
     color: #eee;
     font-size: 24px;
     line-height: 1.5;
     margin: 75px 0 65px
 }
+
 .portfolio-modal img {
     display: block;
     max-width: 40vw;
@@ -927,17 +1069,21 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -ms-flex: none;
     flex: none
 }
+
 .portfolio-modal .inner, .portfolio-modal img {
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: .1s;
     animation-duration: 1s;
     animation-delay: .1s
 }
+
 .portfolio-modal .inner {
     padding: 0 10vw
 }
 
+
 /*** CONTACT SECTION ***/
+
 #contact {
     background: #7D41FF;
     background-image: -webkit-linear-gradient(35deg, #00009a, #b300b3);
@@ -945,38 +1091,46 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     padding: 350px 0;
     z-index: 1324
 }
+
 #contact .container {
     z-index: 1122;
     position: relative
 }
+
 #contact h2 {
     color: #fff;
     font-size: 110px;
     margin: 0 10px 0 0
 }
+
 #contact h2 span {
     font-size: 200%;
     display: inline-block;
     margin-left: -135px
 }
+
 #contact p {
     color: #E9D6FF;
     font-size: 30px;
     margin-top: 188px
 }
+
 #contact p.help-block {
     margin: 0;
     font-size: 22px
 }
+
 #contact a {
     color: #A2FFB0;
     font-size: 30px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease
 }
+
 #contact a:focus, #contact a:hover {
     color: #fff
 }
+
 .row.control-group {
     background: #371470;
     margin: 22px 0;
@@ -985,17 +1139,21 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-animation-duration: .3s;
     animation-duration: .3s
 }
+
 .row.control-group-active {
     background: #210c43
 }
+
 .form-group .form-control {
     color: #fff;
     font-family: Exo;
     font-weight: 200
 }
+
 .form-group {
     padding: 0 20px
 }
+
 .submit button {
     font-family: drakolombregular;
     color: #fff;
@@ -1009,35 +1167,44 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     -webkit-transition: background-color .3s ease, color .3s ease;
     transition: background-color .3s ease, color .3s ease
 }
+
 .submit button:focus, .submit button:hover {
     color: #371470;
     background-color: #A2FFB0
 }
+
 .submit {
     padding: 0 15px
 }
+
 ::placeholder {
     color: #bea0ff!important
 }
+
 ::-webkit-input-placeholder {
     color: #bea0ff!important
 }
+
 ::-moz-placeholder {
     color: #bea0ff!important
 }
+
 :-ms-input-placeholder {
     color: #bea0ff!important
 }
+
 footer {
     background-color: #161440;
     padding: 0 0 40px;
     position: relative;
     z-index: 1345
 }
+
 footer .container {
     z-index: 13;
     position: relative
 }
+
 footer:after {
     content: " ";
     display: block;
@@ -1050,18 +1217,22 @@ footer:after {
     top: -100px;
     overflow: hidden
 }
+
 footer img {
     max-width: 100%
 }
+
 .social li {
     display: inline-block;
     padding: 8px
 }
+
 .social li a {
     color: #00bbb8;
     -webkit-transition: color .3s ease;
     transition: color .3s ease
 }
+
 footer .social li a:focus, footer .social li a:hover {
     color: #A2FFB0
 }
@@ -1070,6 +1241,7 @@ footer .social li a:focus, footer .social li a:hover {
 /* ===============
    MEDIA QUERIES
    =============== */
+
 @media screen and (max-width:50em) {
     .portfolio-modal .modal-content {
         display: block
@@ -1087,6 +1259,7 @@ footer .social li a:focus, footer .social li a:hover {
         padding: 4em 3em 2em
     }
 }
+
 @media screen and (min-width:801px) and (max-width:1250px) {
     .modal-content h2 {
         font-size: 3.2em
@@ -1101,6 +1274,7 @@ footer .social li a:focus, footer .social li a:hover {
         padding: 0 5vw
     }
 }
+
 @media (max-width:440px) {
     .modal-content h2 {
         font-size: 2.8em
@@ -1177,6 +1351,7 @@ footer .social li a:focus, footer .social li a:hover {
         font-size: 22px
     }
 }
+
 @media(max-width:630px) {
     #portfolio h1 {
         font-size: 6em!important;
@@ -1190,6 +1365,7 @@ footer .social li a:focus, footer .social li a:hover {
         padding: 12px 15px
     }
 }
+
 @media(max-width:599px) {
     .works-row {
         max-width: 290px;
@@ -1202,12 +1378,14 @@ footer .social li a:focus, footer .social li a:hover {
         font-size: 50px
     }
 }
+
 @media screen and (min-width:600px) and (max-width:991px) {
     .mix {
         max-width: 50%;
         min-width: 290px
     }
 }
+
 @media(max-width:767px) {
     .mix, ul.filters li {
         margin-bottom: 45px
@@ -1286,6 +1464,7 @@ footer .social li a:focus, footer .social li a:hover {
         height: 85%
     }
 }
+
 @media(min-width:768px) {
     .grid figcaption h2, .grid figcaption p {
         -webkit-transform: translateY(40px);
@@ -1324,6 +1503,7 @@ footer .social li a:focus, footer .social li a:hover {
         margin-top: 260px
     }
 }
+
 @media(max-width:991px) {
     #portfolio h1 {
         line-height: 95px;
@@ -1344,6 +1524,7 @@ footer .social li a:focus, footer .social li a:hover {
         font-size: 1.5em
     }
 }
+
 @media(min-width:992px) {
     .grid svg {
         height: 100%
@@ -1392,6 +1573,7 @@ footer .social li a:focus, footer .social li a:hover {
         margin-top: 182px
     }
 }
+
 @media(min-width:1200px) {
     .grid .mix:hover figcaption h2, .grid .mix:hover figcaption p {
         -webkit-transform: translateY(170px);
@@ -1438,6 +1620,7 @@ footer .social li a:focus, footer .social li a:hover {
         margin-top: 230px
     }
 }
+
 @media(min-width:1400px) {
     #planet3-image {
         top: 32%;
@@ -1459,6 +1642,7 @@ footer .social li a:focus, footer .social li a:hover {
         margin-top: 188px
     }
 }
+
 @media(min-width:1700px) {
     #planet2-image {
         top: 36%;
