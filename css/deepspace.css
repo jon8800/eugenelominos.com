@@ -1171,6 +1171,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .submit button:focus, .submit button:hover {
     color: #371470;
     background-color: #A2FFB0
+    outline:0;
 }
 
 .submit {
