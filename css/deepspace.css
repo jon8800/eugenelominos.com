@@ -100,6 +100,7 @@ hr.star-primary:after {
 }
 
 .loader .row {
+    margin: 0;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -1449,7 +1450,8 @@ footer .social li a:focus, footer .social li a:hover {
     }
     footer .social {
         font-size: 70px;
-        margin-top: 45px
+        margin-top: 45px;
+        padding: 0;
     }
     footer .social li {
         padding: 8px 16px
