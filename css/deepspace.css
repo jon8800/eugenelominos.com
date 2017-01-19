@@ -1418,7 +1418,8 @@ footer .social li a:focus, footer .social li a:hover {
 
 @media(max-width:767px) {
     .mix, ul.filters li {
-        margin-bottom: 45px
+        margin-bottom: 45px;
+        margin-right: 0;
     }
     #contactForm {
         padding: 15px
