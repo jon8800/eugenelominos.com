@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 hr.star-light, hr.star-primary {
@@ -1158,30 +1158,28 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .form-group {
     padding: 0 20px
 }
-#success {
 
-}
 #contactForm .alert {
-border-color: #A2FFB0;
-background: transparent;
-border-radius:0;
-font-family: Exo, sans-serif;
-color:#A2FFB0;
+    border-color: #A2FFB0;
+    background: transparent;
+    border-radius: 0;
+    font-family: Exo, sans-serif;
+    color: #A2FFB0;
 }
 
 #contactForm .alert .close {
-  font-size: 32px;
-font-weight: 300;
-line-height: 0.65;
-color: #a2ffb0;
-text-shadow: none;
-opacity: 1;
--webkit-transition: color .2s ease;
-transition: color .2s ease;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 0.65;
+    color: #a2ffb0;
+    text-shadow: none;
+    opacity: 1;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
 }
-#contactForm .alert .close:hover,
-#contactForm .alert .close:focus {
-  color: #fff;
+
+#contactForm .alert .close:hover, #contactForm .alert .close:focus {
+    color: #fff;
 }
 
 .submit button {
