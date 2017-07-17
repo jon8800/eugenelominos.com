@@ -1117,7 +1117,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 
 #contact p {
     color: #E9D6FF;
-    font-size: 30px;
+    font-size: 26px;
     margin-top: 188px
 }
 
@@ -1128,7 +1128,7 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 
 #contact a {
     color: #A2FFB0;
-    font-size: 30px;
+    font-size: 26px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease
 }
