@@ -1,3 +1,17 @@
+.caption,
+.grid figcaption h2,
+.grid figure button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header .intro-text .name,
+ul.filters li a {
+    text-transform: uppercase
+}
+
 @font-face {
     font-family: drakolombregular;
     src: url(../fonts/drakolomb/drakolomb-webfont.eot);
@@ -5,11 +19,6 @@
     font-weight: 400;
     font-style: normal
 }
-
-
-/* ===============
-   GLOBAL SETTINGS
-   =============== */
 
 .main-container {
     width: 100%;
@@ -25,23 +34,38 @@ p.small {
     font-size: 16px
 }
 
-a, a.active, a:active, a:focus, a:hover {
+a,
+a.active,
+a:active,
+a:focus,
+a:hover {
     outline: 0;
     color: #18bc9c;
     text-decoration: none
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: drakolombregular
 }
 
 button {
-    outline: none !important;
-    box-shadow: none !important;
+    outline: 0 !important;
+    box-shadow: none !important
 }
 
-hr.star-light, hr.star-primary {
+.c-hamburger:focus,
+.grid figure button,
+.scroll-top .btn:focus {
+    outline: 0
+}
+
+hr.star-light,
+hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -50,7 +74,8 @@ hr.star-light, hr.star-primary {
     text-align: center
 }
 
-hr.star-light:after, hr.star-primary:after {
+hr.star-light:after,
+hr.star-primary:after {
     content: "\f005";
     display: inline-block;
     position: relative;
@@ -82,21 +107,17 @@ hr.star-primary:after {
     margin: 0 auto
 }
 
-
-/*** START LOADER ***/
-
 .loader {
     background: #174f48;
-    background: -webkit-radial-gradient(center, ellipse cover, #174f48 0%, #102e38 100%);
-    background: -webkit-radial-gradient(center ellipse, #174f48 0%, #102e38 100%);
-    background: radial-gradient(ellipse at center, #174f48 0%, #102e38 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174f48', endColorstr='#102e38', GradientType=1);
+    background: -webkit-radial-gradient(center ellipse, #174f48 0, #102e38 100%);
+    background: radial-gradient(ellipse at center, #174f48 0, #102e38 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#174f48', endColorstr='#102e38', GradientType=1);
     position: fixed;
     width: 100%;
     z-index: 10000;
     height: 100%;
     -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s
 }
 
 .loader .row {
@@ -106,15 +127,15 @@ hr.star-primary:after {
     top: 50%;
     left: 0;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .no-js .loader {
-    display: none;
+    display: none
 }
 
 .loader .mainlogo {
-    max-width: 450px;
+    max-width: 450px
 }
 
 .spinner {
@@ -125,62 +146,63 @@ hr.star-primary:after {
     left: 50%;
     margin-top: 50px;
     width: 50px;
-    height: 50px;
+    height: 50px
 }
 
 .spinner .path {
     stroke: #00d2c6;
     stroke-linecap: round;
     -webkit-animation: dash 1.5s ease-in-out infinite;
-    animation: dash 1.5s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite
 }
 
 @-webkit-keyframes rotate {
     100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
 
 @keyframes rotate {
     100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
 
 @-webkit-keyframes dash {
     0% {
         stroke-dasharray: 1, 150;
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 0
     }
+
     50% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -35;
+        stroke-dashoffset: -35
     }
+
     100% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -124;
+        stroke-dashoffset: -124
     }
 }
 
 @keyframes dash {
     0% {
         stroke-dasharray: 1, 150;
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 0
     }
+
     50% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -35;
+        stroke-dashoffset: -35
     }
+
     100% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -124;
+        stroke-dashoffset: -124
     }
 }
-
-
-/*** HEADER ***/
 
 header {
     color: #fff;
@@ -197,7 +219,6 @@ header {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 700
@@ -222,7 +243,8 @@ section {
     margin-bottom: 0
 }
 
-.floating-label-form-group input, .floating-label-form-group textarea {
+.floating-label-form-group input,
+.floating-label-form-group textarea {
     z-index: 1;
     position: relative;
     padding-right: 0;
@@ -231,7 +253,7 @@ section {
     border-radius: 0;
     font-size: 1.8em;
     background: 0 0;
-    box-shadow: none!important;
+    box-shadow: none !important;
     resize: none
 }
 
@@ -292,8 +314,9 @@ section {
     box-shadow: rgba(22, 20, 0, .16) 0 0 1px 1px
 }
 
-.scroll-top .btn:focus {
-    outline: 0
+.c-hamburger,
+.c-hamburger--htx.is-active:hover {
+    box-shadow: none
 }
 
 #trigger-overlay {
@@ -344,11 +367,16 @@ section {
     position: relative
 }
 
-.feature-icon, .grid figcaption, .overlay nav, header {
+.feature-icon,
+.grid figcaption,
+.overlay nav,
+header {
     text-align: center
 }
 
-.overlay ul, footer .social, ul.filters {
+.overlay ul,
+footer .social,
+ul.filters {
     list-style: none
 }
 
@@ -418,6 +446,7 @@ section {
         height: 70%;
         font-size: 34px
     }
+
     .overlay ul li {
         min-height: 34px
     }
@@ -436,16 +465,11 @@ section {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    box-shadow: none;
     border-radius: none;
     border: none;
     cursor: pointer;
     -webkit-transition: background .3s;
     transition: background .3s
-}
-
-.c-hamburger:focus {
-    outline: 0
 }
 
 .c-hamburger span {
@@ -458,7 +482,8 @@ section {
     background: #00d1c5
 }
 
-.c-hamburger span::after, .c-hamburger span::before {
+.c-hamburger span::after,
+.c-hamburger span::before {
     position: absolute;
     display: block;
     left: 0;
@@ -468,7 +493,8 @@ section {
     content: ""
 }
 
-.c-hamburger--htx, .c-hamburger--htx.is-active {
+.c-hamburger--htx,
+.c-hamburger--htx.is-active {
     background-color: transparent
 }
 
@@ -485,18 +511,13 @@ section {
     transition: box-shadow .3s
 }
 
-.c-hamburger--htx:hover {}
-
-.c-hamburger--htx.is-active:hover {
-    box-shadow: none
-}
-
 .c-hamburger--htx span {
     -webkit-transition: background .3s cubic-bezier(.19, 1, .22, 1) .3s;
     transition: background .3s cubic-bezier(.19, 1, .22, 1) .3s
 }
 
-.c-hamburger--htx span::after, .c-hamburger--htx span::before {
+.c-hamburger--htx span::after,
+.c-hamburger--htx span::before {
     -webkit-transition-duration: .3s, .3s;
     transition-duration: .3s, .3s;
     -webkit-transition-delay: .3s, 0s;
@@ -533,7 +554,8 @@ section {
     transform: rotate(-45deg)
 }
 
-.c-hamburger--htx.is-active span::after, .c-hamburger--htx.is-active span::before {
+.c-hamburger--htx.is-active span::after,
+.c-hamburger--htx.is-active span::before {
     background-color: #fff;
     -webkit-transition-delay: 0s, .3s;
     transition-delay: 0s, .3s
@@ -563,7 +585,8 @@ canvas {
     vertical-align: bottom
 }
 
-#particles-js, #particles-js-contact {
+#particles-js,
+#particles-js-contact {
     position: absolute;
     top: 0;
     left: 0;
@@ -572,9 +595,6 @@ canvas {
     background-color: transparent;
     z-index: 1111
 }
-
-
-/*** ABOUT SECTION ***/
 
 #about {
     z-index: 1354;
@@ -591,7 +611,8 @@ canvas {
     padding-bottom: 22px
 }
 
-#about:after, #about:before {
+#about:after,
+#about:before {
     content: " ";
     display: block;
     background: #fff;
@@ -646,7 +667,8 @@ h1 {
     top: 0
 }
 
-.dynamictext, .feature-icon {
+.dynamictext,
+.feature-icon {
     position: relative
 }
 
@@ -732,13 +754,9 @@ h1 {
 
 .caption {
     font-family: drakolombregular;
-    text-transform: uppercase;
     font-size: 42px;
     margin-top: 18px
 }
-
-
-/*** PORTFOLIO SECTION ***/
 
 #portfolio {
     padding: 480px 0 120px;
@@ -749,7 +767,7 @@ h1 {
     background: -o-linear-gradient(35deg, #00bfb4 46%, #00a4cf 100%);
     background: -ms-linear-gradient(35deg, #00bfb4 46%, #00a4cf 100%);
     background: linear-gradient(35deg, #00bfb4 46%, #00a4cf 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00bfb4', endColorstr='#00a4cf', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00bfb4', endColorstr='#00a4cf', GradientType=1);
     z-index: 1334
 }
 
@@ -771,7 +789,8 @@ h1 {
     overflow: hidden
 }
 
-#portfolio h1 span.wow.jello, ul.filters li {
+#portfolio h1 span.wow.jello,
+ul.filters li {
     display: inline-block
 }
 
@@ -803,7 +822,6 @@ ul.filters li a {
     font-family: Exo;
     font-weight: 400;
     font-size: 24px;
-    text-transform: uppercase;
     letter-spacing: 1.2px;
     border: 2px solid #fff;
     padding: 3px 10px;
@@ -811,7 +829,9 @@ ul.filters li a {
     -webkit-transition: color .2s ease, background-color .2s ease
 }
 
-ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
+ul.filters li a.filter.active,
+ul.filters li a:focus,
+ul.filters li a:hover {
     color: #00bfb4;
     background-color: #fff
 }
@@ -850,7 +870,8 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     height: 150px
 }
 
-.grid figure:before, .grid svg {
+.grid figure:before,
+.grid svg {
     height: 100%;
     width: 100%;
     position: absolute
@@ -859,13 +880,13 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .grid figcaption h2 {
     font-family: drakolombregular margin: 0 0 20px 0;
     color: #3498db;
-    text-transform: uppercase;
     font-size: 32px;
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s
 }
 
-.grid figcaption p, .grid figure button {
+.grid figcaption p,
+.grid figure button {
     font-weight: 300;
     font-size: 20px;
     font-family: Exo
@@ -878,12 +899,14 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     transition: opacity .3s, transform .3s
 }
 
-.grid figcaption h2, .grid figcaption p {
+.grid figcaption h2,
+.grid figcaption p {
     -webkit-transform: translateY(50px);
     transform: translateY(50px)
 }
 
-.grid .twolines figcaption h2, .grid .twolines figcaption p {
+.grid .twolines figcaption h2,
+.grid .twolines figcaption p {
     -webkit-transform: translateY(20px);
     transform: translateY(20px)
 }
@@ -891,7 +914,6 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .grid figure button {
     position: absolute;
     padding: 4px 20px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     -webkit-transition: opacity .3s, -webkit-transform .3s, background-color .3s;
     transition: opacity .3s, transform .3s, background-color .3s;
@@ -901,7 +923,6 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     background: #009EC8;
     color: #fff;
     opacity: 0;
-    outline: 0;
     z-index: 30;
     -webkit-transform: translateY(-50%) translateX(-50%) scale(.25);
     transform: translateY(-50%) translateX(-50%) scale(.25)
@@ -917,7 +938,10 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     transform: translateY(-50%) translateX(-50%) scale(1)
 }
 
-.grid figcaption, .grid figcaption h2, .grid figcaption p, .grid figure button {
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
@@ -935,12 +959,14 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     opacity: 1
 }
 
-.grid .mix:hover figcaption h2, .grid .mix:hover figcaption p {
+.grid .mix:hover figcaption h2,
+.grid .mix:hover figcaption p {
     -webkit-transform: translateY(170px);
     transform: translateY(170px)
 }
 
-.grid .twolines.mix:hover figcaption h2, .grid .twolines.mix:hover figcaption p {
+.grid .twolines.mix:hover figcaption h2,
+.grid .twolines.mix:hover figcaption p {
     -webkit-transform: translateY(135px);
     transform: translateY(135px)
 }
@@ -1041,7 +1067,9 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     margin: .25em 0 .5em
 }
 
-#contact a, #contact p, .portfolio-modal .modal-content p {
+#contact a,
+#contact p,
+.portfolio-modal .modal-content p {
     font-weight: 300;
     font-family: Exo
 }
@@ -1055,7 +1083,8 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     transition: color .3s ease, background-color .3s ease
 }
 
-.portfolio-modal .modal-content a:focus, .portfolio-modal .modal-content a:hover {
+.portfolio-modal .modal-content a:focus,
+.portfolio-modal .modal-content a:hover {
     color: #222125;
     background-color: #18BC9C
 }
@@ -1076,7 +1105,8 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     flex: none
 }
 
-.portfolio-modal .inner, .portfolio-modal img {
+.portfolio-modal .inner,
+.portfolio-modal img {
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: .1s;
     animation-duration: 1s;
@@ -1086,9 +1116,6 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 .portfolio-modal .inner {
     padding: 0 10vw
 }
-
-
-/*** CONTACT SECTION ***/
 
 #contact {
     background: #7D41FF;
@@ -1118,7 +1145,6 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 #contact p {
     color: #E9D6FF;
     font-size: 26px;
-    margin-top: 188px
 }
 
 #contact p.help-block {
@@ -1133,7 +1159,8 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     transition: color .3s ease
 }
 
-#contact a:focus, #contact a:hover {
+#contact a:focus,
+#contact a:hover {
     color: #fff
 }
 
@@ -1162,25 +1189,26 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 
 #contactForm .alert {
     border-color: #A2FFB0;
-    background: transparent;
+    background: 0 0;
     border-radius: 0;
     font-family: Exo, sans-serif;
-    color: #A2FFB0;
+    color: #A2FFB0
 }
 
 #contactForm .alert .close {
     font-size: 32px;
     font-weight: 300;
-    line-height: 0.65;
+    line-height: .65;
     color: #a2ffb0;
     text-shadow: none;
     opacity: 1;
     -webkit-transition: color .2s ease;
-    transition: color .2s ease;
+    transition: color .2s ease
 }
 
-#contactForm .alert .close:hover, #contactForm .alert .close:focus {
-    color: #fff;
+#contactForm .alert .close:focus,
+#contactForm .alert .close:hover {
+    color: #fff
 }
 
 .submit button {
@@ -1198,9 +1226,10 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
     transition: background-color .3s ease, color .3s ease
 }
 
-.submit button:focus, .submit button:hover {
+.submit button:focus,
+.submit button:hover {
     color: #371470;
-    background-color: #A2FFB0;
+    background-color: #A2FFB0
 }
 
 .submit {
@@ -1208,19 +1237,19 @@ ul.filters li a.filter.active, ul.filters li a:focus, ul.filters li a:hover {
 }
 
 ::placeholder {
-    color: #bea0ff!important
+    color: #bea0ff !important
 }
 
 ::-webkit-input-placeholder {
-    color: #bea0ff!important
+    color: #bea0ff !important
 }
 
 ::-moz-placeholder {
-    color: #bea0ff!important
+    color: #bea0ff !important
 }
 
 :-ms-input-placeholder {
-    color: #bea0ff!important
+    color: #bea0ff !important
 }
 
 footer {
@@ -1263,27 +1292,28 @@ footer img {
     transition: color .3s ease
 }
 
-footer .social li a:focus, footer .social li a:hover {
+footer .social li a:focus,
+footer .social li a:hover {
     color: #A2FFB0
 }
-
-
-/* ===============
-   MEDIA QUERIES
-   =============== */
 
 @media screen and (max-width:50em) {
     .portfolio-modal .modal-content {
         display: block
     }
+
     .portfolio-modal img {
         max-width: calc(100% - 80px);
         max-height: 70vh;
         margin: 0 auto
     }
-    .modal-content h2, .portfolio-modal .modal-content a, .portfolio-modal .modal-content h3 {
+
+    .modal-content h2,
+    .portfolio-modal .modal-content a,
+    .portfolio-modal .modal-content h3 {
         text-align: center
     }
+
     .portfolio-modal .inner {
         font-size: 82%;
         padding: 4em 3em 2em
@@ -1294,12 +1324,15 @@ footer .social li a:focus, footer .social li a:hover {
     .modal-content h2 {
         font-size: 3.2em
     }
+
     .portfolio-modal .modal-content h3 {
         font-size: 1.55em
     }
+
     .portfolio-modal .modal-content p {
         font-size: 20px
     }
+
     .portfolio-modal .inner {
         padding: 0 5vw
     }
@@ -1309,24 +1342,30 @@ footer .social li a:focus, footer .social li a:hover {
     .modal-content h2 {
         font-size: 2.8em
     }
+
     .portfolio-modal .modal-content h3 {
         font-size: 1.7em
     }
+
     .portfolio-modal .modal-content p {
         font-size: 18px;
         margin: 25px 0 45px
     }
+
     .portfolio-modal .modal-content a {
         font-size: 16px;
         padding: 14px 10px
     }
+
     .portfolio-modal .close-modal {
         top: 20px;
         right: 20px;
         width: 50px;
         height: 50px
     }
-    .portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
+
+    .portfolio-modal .close-modal .lr,
+    .portfolio-modal .close-modal .lr .rl {
         height: 50px
     }
 }
@@ -1335,62 +1374,78 @@ footer .social li a:focus, footer .social li a:hover {
     #about .dynamictext h3 {
         font-size: .95em
     }
+
     #about .dynamictext {
         margin-bottom: 125px;
         margin-left: 0;
         left: 0
     }
+
     #trigger-overlay {
         top: 10px;
         right: 10px;
         width: 70px;
         height: 70px
     }
+
     .c-hamburger span {
         top: 33px;
         left: 8px;
         right: 8px;
         height: 4px
     }
-    .c-hamburger span::after, .c-hamburger span::before {
+
+    .c-hamburger span::after,
+    .c-hamburger span::before {
         height: 4px
     }
+
     .c-hamburger span::before {
         top: -17px
     }
+
     .c-hamburger span::after {
         bottom: -17px
     }
+
     #home {
         height: 1100px
     }
+
     header .mainlogo {
         width: 75%
     }
+
     header #planet1-image {
         left: -355px
     }
+
     header #planet2-image {
         right: 0;
         top: 38%
     }
+
     header #planet3-image {
         top: 34%
     }
-    #contact p, #contact p a {
+
+    #contact p,
+    #contact p a {
         font-size: 22px
     }
 }
 
 @media(max-width:630px) {
     #portfolio h1 {
-        font-size: 6em!important;
+        font-size: 6em !important;
         line-height: initial
     }
+
     ul.filters li {
         text-align: center;
         display: block
     }
+
     ul.filters li a {
         padding: 12px 15px
     }
@@ -1401,9 +1456,11 @@ footer .social li a:focus, footer .social li a:hover {
         max-width: 290px;
         margin: 0 auto
     }
+
     .mix {
         min-width: 290px
     }
+
     #contact h2 {
         font-size: 50px
     }
@@ -1417,122 +1474,153 @@ footer .social li a:focus, footer .social li a:hover {
 }
 
 @media(max-width:767px) {
-    .mix, ul.filters li {
-        margin-bottom: 45px;
-        margin-right: 0;
+
+    #contact h2,
+    #contact p {
+        text-align: center
     }
+
+    .mix,
+    ul.filters li {
+        margin-bottom: 45px;
+        margin-right: 0
+    }
+
     #contactForm {
         padding: 15px
     }
+
     .grid {
         margin-top: 0
     }
+
     #portfolio h1 {
-        line-height: 85px!important
+        line-height: 85px !important
     }
+
     #about p.about-p {
         font-size: 2.2em
     }
+
     #about .dynamictext {
         margin-bottom: 125px
     }
+
     h1 {
         font-size: 8em
     }
+
     #about h2 {
         font-size: 5em
     }
+
     .mainlogo {
         width: 65%;
         margin-top: 55px
     }
-    #particles-js, #particles-js-contact {
+
+    #particles-js,
+    #particles-js-contact {
         display: none
     }
+
     footer .social {
         font-size: 70px;
         margin-top: 45px;
-        padding: 0;
+        padding: 0
     }
+
     footer .social li {
         padding: 8px 16px
     }
+
     #planet2-image {
         top: 42%;
         width: 600px;
         height: 600px;
         right: 16%
     }
+
     #planet1-image {
         width: 800px;
         height: 800px;
         bottom: -255px;
         left: -225px
     }
+
     #planet3-image {
         top: 36%;
         right: 22%
     }
-    #contact h2 {
-        text-align: center
-    }
+
     #contact h2 span {
         margin-left: 0
     }
+
     #contact p {
-        margin-top: 12px;
-        text-align: center;
+        margin-top: 12px
     }
+
     #portfolio {
         padding: 400px 0 0
     }
+
     #about:after {
         bottom: -40px
     }
+
     #contact {
         padding: 210px 0 220px
     }
+
     .grid svg {
         height: 85%
     }
 }
 
 @media(min-width:768px) {
-    .grid figcaption h2, .grid figcaption p {
+
+    .grid figcaption h2,
+    .grid figcaption p {
         -webkit-transform: translateY(40px);
         transform: translateY(40px)
     }
+
     .grid svg {
         height: 80%
     }
+
     .mix {
         margin-bottom: 45px
     }
+
     footer .social li a {
         font-size: 50px
     }
+
     #planet2-image {
         top: 38%;
         width: 600px;
         height: 600px;
         right: 16%
     }
+
     #planet1-image {
         width: 800px;
         height: 800px
     }
+
     #planet3-image {
         top: 36%;
         right: 80px
     }
+
     #contact h2 span {
         font-size: 140%
     }
+
     #contact h2 {
         font-size: 80px
-    }
-    #contact p {
-        margin-top: 260px
     }
 }
 
@@ -1541,17 +1629,20 @@ footer .social li a:focus, footer .social li a:hover {
         line-height: 95px;
         font-size: 8em
     }
+
     .caption {
         font-family: drakolombregular;
         font-size: 42px;
         margin: 18px 0 55px
     }
+
     .dynamictext {
         display: block;
-        margin-left: 0!important;
+        margin-left: 0 !important;
         margin-bottom: 165px;
         left: -8px
     }
+
     .dynamictext h3 {
         font-size: 1.5em
     }
@@ -1561,95 +1652,120 @@ footer .social li a:focus, footer .social li a:hover {
     .grid svg {
         height: 100%
     }
+
     .mix {
         margin-bottom: 45px
     }
+
     footer .social li a {
-        font-size: 70px
+        font-size: 50px
     }
+
     footer .social li {
         padding: 8px 12px
     }
+
     #planet2-image {
         right: 22%
     }
-    .grid .mix:hover figcaption h2, .grid .mix:hover figcaption p {
+
+    .grid .mix:hover figcaption h2,
+    .grid .mix:hover figcaption p {
         -webkit-transform: translateY(180px);
         transform: translateY(180px)
     }
-    .grid .twolines.mix:hover figcaption h2, .grid .twolines.mix:hover figcaption p {
+
+    .grid .twolines.mix:hover figcaption h2,
+    .grid .twolines.mix:hover figcaption p {
         -webkit-transform: translateY(155px);
         transform: translateY(155px)
     }
+
     .grid figcaption h2 {
         font-size: 24px
     }
+
     .grid figcaption p {
         font-size: 18px
     }
-    .grid figcaption h2, .grid figcaption p {
+
+    .grid figcaption h2,
+    .grid figcaption p {
         -webkit-transform: translateY(70px);
         transform: translateY(70px)
     }
-    .grid .twolines figcaption h2, .grid .twolines figcaption p {
+
+    .grid .twolines figcaption h2,
+    .grid .twolines figcaption p {
         -webkit-transform: translateY(40px);
         transform: translateY(40px)
     }
+
     #contact h2 span {
         font-size: 140%
     }
+
     #contact h2 {
         font-size: 110px
-    }
-    #contact p {
-        margin-top: 182px
     }
 }
 
 @media(min-width:1200px) {
-    .grid .mix:hover figcaption h2, .grid .mix:hover figcaption p {
+
+    .grid .mix:hover figcaption h2,
+    .grid .mix:hover figcaption p {
         -webkit-transform: translateY(170px);
         transform: translateY(170px)
     }
-    .grid .twolines.mix:hover figcaption h2, .grid .twolines.mix:hover figcaption p {
+
+    .grid .twolines.mix:hover figcaption h2,
+    .grid .twolines.mix:hover figcaption p {
         -webkit-transform: translateY(135px);
         transform: translateY(135px)
     }
+
     .grid figcaption h2 {
         font-size: 32px
     }
+
     .grid figcaption p {
         font-size: 20px
     }
-    .grid figcaption h2, .grid figcaption p {
+
+    .grid figcaption h2,
+    .grid figcaption p {
         -webkit-transform: translateY(50px);
         transform: translateY(50px)
     }
-    .grid .twolines figcaption h2, .grid .twolines figcaption p {
+
+    .grid .twolines figcaption h2,
+    .grid .twolines figcaption p {
         -webkit-transform: translateY(20px);
         transform: translateY(20px)
     }
+
     footer .social li {
         padding: 18px 22px
     }
+
     #planet2-image {
         top: 38%;
         width: 600px;
         height: 600px
     }
+
     #planet1-image {
         width: 800px;
         height: 800px
     }
+
     #planet3-image {
         top: 36%;
         right: 200px
     }
+
     #contact h2 span {
         font-size: 165%
-    }
-    #contact p {
-        margin-top: 230px
     }
 }
 
@@ -1658,20 +1774,20 @@ footer .social li a:focus, footer .social li a:hover {
         top: 32%;
         right: 150px
     }
+
     #planet2-image {
         top: 38%;
         width: 600px;
         height: 600px
     }
+
     #planet1-image {
         width: 800px;
         height: 800px
     }
+
     #contact h2 span {
         font-size: 200%
-    }
-    #contact p {
-        margin-top: 188px
     }
 }
 
@@ -1681,6 +1797,7 @@ footer .social li a:focus, footer .social li a:hover {
         width: 700px;
         height: 700px
     }
+
     #planet1-image {
         width: 900px;
         height: 900px
